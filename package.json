@@ -11,14 +11,27 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.sayHello",
+        "onCommand:extension.makeVar"
     ],
     "main": "./out/src/extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
-        }]
+        "commands": [
+            {
+                "command": "extension.sayHello",
+                "title": "Hello World"
+            },
+            {
+                "command": "extension.makeVar",
+                "title": "Make a Variable"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.makeVar",
+                "key": "F3"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
