@@ -18,10 +18,6 @@
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
-            },
-            {
                 "command": "extension.makeVar",
                 "title": "Make a Variable"
             }
